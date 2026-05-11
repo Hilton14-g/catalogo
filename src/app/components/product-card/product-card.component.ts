@@ -1,5 +1,6 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CarritoService } from '../../services/carrito.service';
 
 export interface Producto {
   id: number;
@@ -26,6 +27,9 @@ export interface Producto {
           {{ formatPrice(producto.precio) }}
           <span *ngIf="producto.precioAnterior">{{ formatPrice(producto.precioAnterior) }}</span>
         </p>
+        <button class="btn-add-cart" (click)="agregarAlCarrito()">
+          🛒 Agregar
+        </button>
       </div>
     </div>
   `,
@@ -37,6 +41,9 @@ export interface Producto {
       box-shadow: 0 4px 15px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
       position: relative;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
     
     .product-card:hover {
@@ -46,13 +53,16 @@ export interface Producto {
     
     .product-image {
       width: 100%;
-      height: 160px;
+      height: 180px;
       object-fit: cover;
       background: linear-gradient(135deg, #ffccd5 0%, #ffeff5 100%);
     }
     
     .product-info {
       padding: 0.8rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
     }
     
     .product-name {
@@ -72,6 +82,26 @@ export interface Producto {
       font-size: 1.1rem;
       font-weight: 600;
       color: var(--rose-primary);
+      margin-bottom: 0.5rem;
+    }
+    
+    .btn-add-cart {
+      width: 100%;
+      padding: 0.6rem;
+      background: linear-gradient(135deg, var(--rose-primary) 0%, var(--rose-dark) 100%);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-size: 0.85rem;
+      margin-top: auto;
+    }
+    
+    .btn-add-cart:hover {
+      transform: scale(1.02);
+      box-shadow: 0 4px 12px rgba(253, 121, 168, 0.4);
     }
     
     .product-price span {
@@ -97,8 +127,13 @@ export interface Producto {
 })
 export class ProductCardComponent {
   @Input() producto!: Producto;
+  private carritoService = inject(CarritoService);
   
   formatPrice(precio: number): string {
     return '$' + precio.toLocaleString('es-CL');
+  }
+  
+  agregarAlCarrito() {
+    this.carritoService.agregarAlCarrito(this.producto);
   }
 }

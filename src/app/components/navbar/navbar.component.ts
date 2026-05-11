@@ -1,12 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, inject, Output, EventEmitter } from '@angular/core';
+import { CarritoService } from '../../services/carrito.service';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
+  imports: [CommonModule],
   template: `
     <nav class="navbar">
       <div class="navbar-top">
         <div class="logo">🌹 Rosas Eternas</div>
+        <button class="btn-cart" (click)="toggleCarrito.emit()">
+          🛒
+          <span class="cart-count" *ngIf="totalItems() > 0">{{ totalItems() }}</span>
+        </button>
       </div>
     </nav>
   `,
@@ -39,7 +46,44 @@ import { Component } from '@angular/core';
       gap: 0.5rem;
       color: white;
     }
+    
+    .btn-cart {
+      background: white;
+      color: var(--rose-primary);
+      border: none;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      cursor: pointer;
+      position: relative;
+      transition: transform 0.3s ease;
+    }
+    
+    .btn-cart:hover {
+      transform: scale(1.1);
+    }
+    
+    .cart-count {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background: var(--rose-dark);
+      color: white;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      font-size: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+    }
   `]
 })
 export class NavbarComponent {
+  private carritoService = inject(CarritoService);
+  totalItems = this.carritoService.getTotalItems;
+  
+  @Output() toggleCarrito = new EventEmitter<void>();
 }
