@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
       <div class="footer-content">
         <div class="footer-brand">
           <h3>🌹 Rosas Eternas</h3>
-          <p>Envíos a todo Chile</p>
         </div>
         <div class="footer-divider"></div>
         <p class="copyright">© 2026 Rosas Eternas. Todos los derechos reservados.</p>
@@ -74,4 +73,4 @@ import { Component } from '@angular/core';
     }
   `]
 })
-export class FooterComponent {}
+export class FooterComponent { }
