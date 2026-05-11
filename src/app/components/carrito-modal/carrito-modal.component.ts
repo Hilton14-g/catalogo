@@ -281,7 +281,6 @@ export class CarritoModalComponent {
     items.forEach((item, index) => {
       mensaje += `▫ ${item.nombre} (x${item.cantidad})%0A`;
     });
-    mensaje += '%0A Espero su confirmación. Gracias!';
     
     const telefono = '51983836445';
     const url = `https://wa.me/${telefono}?text=${mensaje}`;
