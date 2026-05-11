@@ -74,6 +74,9 @@ export interface Producto {
       margin-bottom: 0.5rem;
       letter-spacing: 0.15em;
       line-height: 1.4;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      hyphens: auto;
     }
     
     .product-desc {
@@ -83,6 +86,8 @@ export interface Producto {
       color: var(--text-light);
       margin-bottom: 0.6rem;
       letter-spacing: 0.1em;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
     }
     
     .product-price {
