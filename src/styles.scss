@@ -1,0 +1,47 @@
+:root {
+  --rose-primary: #fd79a8;
+  --rose-dark: #e84393;
+  --rose-light: #fab1a0;
+  --rose-pink: #fd79a8;
+  --rose-gradient-start: #fd79a8;
+  --rose-gradient-end: #e84393;
+  --gold: #fdcb6e;
+  --gold-light: #ffeaa7;
+  --cream: #fff0f5;
+  --white: #ffffff;
+  --text-dark: #2d3436;
+  --text-light: #636e72;
+  --bg-soft: #fff5f7;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  background: var(--bg-soft);
+  color: var(--text-dark);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+main {
+  min-height: calc(100vh - 200px);
+}
+
+.page-content {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
