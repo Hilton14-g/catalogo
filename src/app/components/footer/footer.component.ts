@@ -11,10 +11,10 @@ import { Component } from '@angular/core';
         <div class="contact-info">
           <p class="whatsapp-contact">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
-            WhatsApp: +51 983 836 445
+
           </p>
         </div>
-        <p class="copyright"> 2025 Rosas Eternas. Todos los derechos reservados.</p>
+        <p class="copyright"> 2026 Rosas Eternas. Todos los derechos reservados.</p>
       </div>
     </footer>
   `,
