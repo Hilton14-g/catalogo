@@ -8,11 +8,6 @@ import { Component } from '@angular/core';
       <div class="footer-content">
         <h3>Rosas Eternas</h3>
         <p>Envíos a todo Chile</p>
-        <div class="contact-info">
-          <a href="https://wa.me/51983836445" target="_blank" class="whatsapp-link">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
-          </a>
-        </div>
         <p class="copyright"> 2026 Rosas Eternas. Todos los derechos reservados.</p>
       </div>
     </footer>
