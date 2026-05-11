@@ -9,10 +9,9 @@ import { Component } from '@angular/core';
         <h3>Rosas Eternas</h3>
         <p>Envíos a todo Chile</p>
         <div class="contact-info">
-          <p class="whatsapp-contact">
+          <a href="https://wa.me/51983836445" target="_blank" class="whatsapp-link">
             <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
-
-          </p>
+          </a>
         </div>
         <p class="copyright"> 2026 Rosas Eternas. Todos los derechos reservados.</p>
       </div>
@@ -56,16 +55,21 @@ import { Component } from '@angular/core';
       margin-bottom: 0;
     }
     
-    .whatsapp-contact {
-      display: flex;
+    .whatsapp-link {
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      gap: 0.5rem;
+      text-decoration: none;
+      transition: transform 0.3s ease;
+    }
+    
+    .whatsapp-link:hover {
+      transform: scale(1.1);
     }
     
     .whatsapp-logo {
-      width: 24px;
-      height: 24px;
+      width: 32px;
+      height: 32px;
     }
     
     .copyright {
