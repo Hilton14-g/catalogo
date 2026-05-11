@@ -18,7 +18,7 @@ import { Component } from '@angular/core';
   `,
   styles: [`
     .hero {
-      background: #ffffff;
+      background: var(--bg-lila);
       min-height: calc(100vh - 80px);
       display: flex;
       align-items: center;

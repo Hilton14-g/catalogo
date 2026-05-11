@@ -51,7 +51,7 @@ interface Ocasion {
   `,
   styles: [`
     .hero-small {
-      background: #ffffff;
+      background: var(--bg-lila);
       color: var(--rose-primary);
       text-align: center;
       padding: 8rem 2rem 3rem;
@@ -75,7 +75,7 @@ interface Ocasion {
     .occasion-nav {
       display: flex;
       overflow-x: auto;
-      background: #ffffff;
+      background: var(--bg-lila);
       padding: 1.5rem 2rem;
       gap: 0.75rem;
       justify-content: center;
@@ -91,7 +91,7 @@ interface Ocasion {
       flex-shrink: 0;
       padding: 0.9rem 1.5rem;
       border: 2px solid var(--border-light);
-      background: #ffffff;
+      background: var(--lila-light);
       color: var(--text-light);
       border-radius: 12px;
       font-size: 0.9rem;
@@ -115,7 +115,7 @@ interface Ocasion {
 
     .content {
       padding: 3rem 2rem;
-      background: #ffffff;
+      background: var(--bg-lila);
       min-height: 60vh;
     }
 

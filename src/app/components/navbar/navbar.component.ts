@@ -19,7 +19,7 @@ import { CommonModule } from '@angular/common';
   `,
   styles: [`
     .navbar {
-      background: #ffffff;
+      background: var(--bg-lila);
       color: var(--rose-primary);
       padding: 0;
       position: fixed;
