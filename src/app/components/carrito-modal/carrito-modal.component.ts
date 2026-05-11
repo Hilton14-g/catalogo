@@ -279,12 +279,9 @@ export class CarritoModalComponent {
     
     let mensaje = '🌹 *Hola, deseo hacer el siguiente pedido:*%0A%0A';
     items.forEach((item, index) => {
-      mensaje += `▫️ ${item.nombre}%0A`;
-      mensaje += `   Cantidad: ${item.cantidad}%0A`;
-      mensaje += `   Precio: ${this.formatPrice(item.precio * item.cantidad)}%0A%0A`;
+      mensaje += `▫️ ${item.nombre} (x${item.cantidad})%0A`;
     });
-    mensaje += `💰 *Total a pagar: ${this.formatPrice(this.getTotal())}*`;
-    mensaje += '%0A%0A📍 Espero su confirmación. Gracias!';
+    mensaje += '%0A📍 Espero su confirmación. Gracias!';
     
     const telefono = '51983836445';
     const url = `https://wa.me/${telefono}?text=${mensaje}`;
