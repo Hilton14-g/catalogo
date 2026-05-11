@@ -60,16 +60,20 @@ interface Ocasion {
     }
 
     .hero-small h1 {
-      font-family: 'Inter', -apple-system, sans-serif;
-      font-size: 2.5rem;
-      font-weight: 700;
+      font-family: 'Yellowtail', cursive;
+      font-size: 3.5rem;
+      font-weight: 400;
       margin-bottom: 0.5rem;
-      letter-spacing: -0.02em;
+      letter-spacing: normal;
     }
 
     .hero-small p {
       color: var(--text-light);
       font-size: 1.1rem;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-weight: 600;
     }
 
     .occasion-nav {
@@ -95,7 +99,10 @@ interface Ocasion {
       color: var(--text-light);
       border-radius: 12px;
       font-size: 0.9rem;
-      font-weight: 500;
+      font-weight: 600;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
       cursor: pointer;
       transition: all 0.2s ease;
       white-space: nowrap;
@@ -141,6 +148,10 @@ interface Ocasion {
     .subtitle {
       color: var(--text-light);
       font-size: 1rem;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-weight: 600;
     }
 
     .product-grid {
