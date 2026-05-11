@@ -66,38 +66,48 @@ export interface Producto {
     }
     
     .product-name {
-      font-family: 'Inter', -apple-system, sans-serif;
-      font-size: 1rem;
-      font-weight: 600;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      font-size: 0.95rem;
+      font-weight: 700;
       color: var(--text-dark);
-      margin-bottom: 0.3rem;
-      letter-spacing: -0.01em;
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.15em;
+      line-height: 1.4;
     }
     
     .product-desc {
-      font-size: 0.75rem;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      font-size: 0.7rem;
       color: var(--text-light);
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.1em;
     }
     
     .product-price {
-      font-size: 1.1rem;
-      font-weight: 600;
+      font-family: 'Overpass', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
       color: var(--rose-primary);
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.8rem;
+      letter-spacing: 0.05em;
     }
     
     .btn-add-cart {
       width: 100%;
-      padding: 0.75rem;
+      padding: 0.85rem;
       background: var(--rose-primary);
       color: white;
       border: none;
       border-radius: 10px;
-      font-weight: 600;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.15em;
       cursor: pointer;
       transition: all 0.2s ease;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       margin-top: auto;
     }
 
@@ -108,10 +118,10 @@ export interface Producto {
     }
     
     .product-price span {
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       color: var(--text-light);
       text-decoration: line-through;
-      margin-left: 0.3rem;
+      margin-left: 0.5rem;
     }
     
     .badge {
@@ -120,10 +130,13 @@ export interface Producto {
       right: 12px;
       background: var(--rose-primary);
       color: white;
-      padding: 0.3rem 0.75rem;
+      padding: 0.4rem 0.8rem;
       border-radius: 20px;
-      font-size: 0.7rem;
-      font-weight: 600;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
       box-shadow: 0 2px 8px rgba(233, 30, 99, 0.3);
     }
   `]

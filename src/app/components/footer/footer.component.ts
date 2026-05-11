@@ -35,18 +35,22 @@ import { Component } from '@angular/core';
     }
 
     footer h3 {
-      font-family: 'Inter', -apple-system, sans-serif;
-      font-size: 1.5rem;
-      font-weight: 700;
+      font-family: 'Yellowtail', cursive;
+      font-size: 2.5rem;
+      font-weight: 400;
       color: var(--rose-primary);
       margin-bottom: 0.5rem;
-      letter-spacing: -0.02em;
+      letter-spacing: normal;
     }
 
     .footer-brand p {
-      font-size: 1rem;
+      font-size: 0.85rem;
       color: var(--text-light);
       margin: 0;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-weight: 600;
     }
 
     .footer-divider {
@@ -58,10 +62,14 @@ import { Component } from '@angular/core';
     }
 
     .copyright {
-      font-size: 0.9rem;
+      font-size: 0.75rem;
       color: var(--text-light);
       opacity: 0.8;
       margin: 0;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-weight: 600;
     }
   `]
 })

@@ -44,17 +44,21 @@ import { Component } from '@angular/core';
       padding: 0.5rem 1rem;
       border-radius: 50px;
       font-size: 0.85rem;
-      font-weight: 600;
+      font-weight: 700;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
       margin-bottom: 1.5rem;
     }
 
     .hero-content h2 {
-      font-size: 3.5rem;
-      font-weight: 700;
+      font-size: 4rem;
+      font-weight: 400;
+      font-family: 'Yellowtail', cursive;
       color: var(--rose-primary);
       line-height: 1.1;
       margin-bottom: 1.5rem;
-      letter-spacing: -0.03em;
+      letter-spacing: normal;
     }
 
     .hero-content p {
@@ -62,6 +66,10 @@ import { Component } from '@angular/core';
       color: var(--text-light);
       line-height: 1.7;
       margin-bottom: 2rem;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
     }
 
     .hero-cta {
@@ -70,8 +78,11 @@ import { Component } from '@angular/core';
       border: none;
       padding: 1rem 2.5rem;
       border-radius: 12px;
-      font-size: 1.1rem;
-      font-weight: 600;
+      font-size: 0.95rem;
+      font-weight: 700;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
       cursor: pointer;
       transition: all 0.2s ease;
       box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);

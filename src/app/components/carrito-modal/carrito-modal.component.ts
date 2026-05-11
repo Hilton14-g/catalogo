@@ -93,11 +93,12 @@ import { CarritoService, CarritoItem } from '../../services/carrito.service';
     }
     
     .modal-header h2 {
-      font-family: 'Inter', -apple-system, sans-serif;
+      font-family: 'Yellowtail', cursive;
       color: var(--rose-primary);
       margin: 0;
-      font-weight: 700;
-      letter-spacing: -0.02em;
+      font-size: 2.5rem;
+      font-weight: 400;
+      letter-spacing: normal;
     }
     
     .btn-close {
@@ -118,6 +119,10 @@ import { CarritoService, CarritoItem } from '../../services/carrito.service';
       text-align: center;
       padding: 2rem;
       color: var(--text-light);
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 600;
     }
     
     .cart-item {
@@ -143,15 +148,21 @@ import { CarritoService, CarritoItem } from '../../services/carrito.service';
     
     .item-info h4 {
       margin: 0 0 0.3rem 0;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: var(--text-dark);
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 700;
     }
     
     .item-price {
       margin: 0 0 0.5rem 0;
       color: var(--rose-primary);
-      font-weight: 600;
-      font-size: 0.95rem;
+      font-weight: 700;
+      font-size: 1.1rem;
+      font-family: 'Overpass', sans-serif;
+      letter-spacing: 0.05em;
     }
     
     .item-controls {
@@ -192,10 +203,13 @@ import { CarritoService, CarritoItem } from '../../services/carrito.service';
     .total {
       display: flex;
       justify-content: space-between;
-      font-size: 1.2rem;
-      font-weight: 600;
+      font-size: 1.1rem;
+      font-weight: 700;
       margin-bottom: 1rem;
       color: var(--text-dark);
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
     }
     
     .total-amount {
@@ -209,8 +223,11 @@ import { CarritoService, CarritoItem } from '../../services/carrito.service';
       color: white;
       border: none;
       border-radius: 12px;
-      font-size: 1rem;
-      font-weight: 600;
+      font-size: 0.95rem;
+      font-weight: 700;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
       cursor: pointer;
       transition: all 0.2s ease;
       box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
