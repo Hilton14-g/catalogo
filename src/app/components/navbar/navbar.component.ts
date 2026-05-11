@@ -83,7 +83,7 @@ import { CommonModule } from '@angular/common';
 })
 export class NavbarComponent {
   private carritoService = inject(CarritoService);
-  totalItems = this.carritoService.getTotalItems;
+  totalItems = this.carritoService.getTotalItems();
   
   @Output() toggleCarrito = new EventEmitter<void>();
 }

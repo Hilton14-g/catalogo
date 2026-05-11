@@ -1,4 +1,4 @@
-import { Injectable, signal } from '@angular/core';
+import { Injectable, signal, computed } from '@angular/core';
 import { Producto } from '../components/product-card/product-card.component';
 
 export interface CarritoItem extends Producto {
@@ -11,9 +11,7 @@ export interface CarritoItem extends Producto {
 export class CarritoService {
   private carrito = signal<CarritoItem[]>([]);
   
-  get items() {
-    return this.carrito;
-  }
+  items = computed(() => this.carrito());
   
   agregarAlCarrito(producto: Producto) {
     const items = this.carrito();
@@ -57,6 +55,6 @@ export class CarritoService {
   }
   
   getTotalItems() {
-    return this.carrito().reduce((total, item) => total + item.cantidad, 0);
+    return computed(() => this.carrito().reduce((total, item) => total + item.cantidad, 0));
   }
 }
