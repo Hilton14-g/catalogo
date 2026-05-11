@@ -9,9 +9,12 @@ import { Component } from '@angular/core';
         <h3>Rosas Eternas</h3>
         <p>Envíos a todo Chile</p>
         <div class="contact-info">
-          <p>� WhatsApp: +51 983 836 445</p>
+          <p class="whatsapp-contact">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-logo">
+            WhatsApp: +51 983 836 445
+          </p>
         </div>
-        <p class="copyright">© 2025 Rosas Eternas. Todos los derechos reservados.</p>
+        <p class="copyright"> 2025 Rosas Eternas. Todos los derechos reservados.</p>
       </div>
     </footer>
   `,
@@ -51,6 +54,18 @@ import { Component } from '@angular/core';
     .contact-info p {
       font-weight: 500;
       margin-bottom: 0;
+    }
+    
+    .whatsapp-contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    
+    .whatsapp-logo {
+      width: 24px;
+      height: 24px;
     }
     
     .copyright {
