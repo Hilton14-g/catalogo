@@ -277,12 +277,14 @@ export class CarritoModalComponent {
     const items = this.items();
     if (items.length === 0) return;
     
-    let mensaje = '🌹 *Pedido de Rosas Eternas*\\n\\n';
+    let mensaje = '🌹 *Hola, deseo hacer el siguiente pedido:*\\n\\n';
     items.forEach((item, index) => {
-      mensaje += `${index + 1}. ${item.nombre} (x${item.cantidad}) - ${this.formatPrice(item.precio * item.cantidad)}\\n`;
+      mensaje += `▫️ ${item.nombre}\\n`;
+      mensaje += `   Cantidad: ${item.cantidad}\\n`;
+      mensaje += `   Precio: ${this.formatPrice(item.precio * item.cantidad)}\\n\\n`;
     });
-    mensaje += `\\n*Total: ${this.formatPrice(this.getTotal())}*`;
-    mensaje += '\\n\\n¡Gracias por tu pedido!';
+    mensaje += `💰 *Total a pagar: ${this.formatPrice(this.getTotal())}*`;
+    mensaje += '\\n\\n📍 Espero su confirmación. Gracias!';
     
     const telefono = '51983836445';
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
