@@ -277,11 +277,11 @@ export class CarritoModalComponent {
     const items = this.items();
     if (items.length === 0) return;
     
-    let mensaje = '🌹 *Hola, deseo hacer el siguiente pedido:*%0A%0A';
+    let mensaje = ' *Hola, deseo hacer el siguiente pedido:*%0A%0A';
     items.forEach((item, index) => {
-      mensaje += `▫️ ${item.nombre} (x${item.cantidad})%0A`;
+      mensaje += `▫ ${item.nombre} (x${item.cantidad})%0A`;
     });
-    mensaje += '%0A📍 Espero su confirmación. Gracias!';
+    mensaje += '%0A Espero su confirmación. Gracias!';
     
     const telefono = '51983836445';
     const url = `https://wa.me/${telefono}?text=${mensaje}`;
