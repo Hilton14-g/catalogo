@@ -93,12 +93,13 @@ import { CarritoService, CarritoItem } from '../../services/carrito.service';
     }
     
     .modal-header h2 {
-      font-family: 'Yellowtail', cursive;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
       color: var(--rose-primary);
       margin: 0;
-      font-size: 2.5rem;
-      font-weight: 400;
-      letter-spacing: normal;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
     }
     
     .btn-close {

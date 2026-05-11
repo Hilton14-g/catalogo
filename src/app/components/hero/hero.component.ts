@@ -52,13 +52,14 @@ import { Component } from '@angular/core';
     }
 
     .hero-content h2 {
-      font-size: 4rem;
-      font-weight: 400;
-      font-family: 'Yellowtail', cursive;
+      font-size: 3rem;
+      font-weight: 700;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
       color: var(--rose-primary);
-      line-height: 1.1;
+      line-height: 1.2;
       margin-bottom: 1.5rem;
-      letter-spacing: normal;
     }
 
     .hero-content p {

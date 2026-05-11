@@ -60,11 +60,12 @@ interface Ocasion {
     }
 
     .hero-small h1 {
-      font-family: 'Yellowtail', cursive;
-      font-size: 3.5rem;
-      font-weight: 400;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      font-size: 2.5rem;
+      font-weight: 700;
       margin-bottom: 0.5rem;
-      letter-spacing: normal;
+      letter-spacing: 0.1em;
     }
 
     .hero-small p {
@@ -137,12 +138,13 @@ interface Ocasion {
     }
 
     .section-header h2 {
-      font-family: 'Yellowtail', cursive;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
       color: var(--rose-primary);
-      font-size: 3.5rem;
-      font-weight: 400;
+      font-size: 2.2rem;
+      font-weight: 700;
       margin-bottom: 0.5rem;
-      letter-spacing: normal;
+      letter-spacing: 0.1em;
     }
 
     .subtitle {

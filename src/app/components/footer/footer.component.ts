@@ -35,12 +35,13 @@ import { Component } from '@angular/core';
     }
 
     footer h3 {
-      font-family: 'Yellowtail', cursive;
-      font-size: 2.5rem;
-      font-weight: 400;
+      font-family: 'Overpass', sans-serif;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+      font-weight: 700;
       color: var(--rose-primary);
       margin-bottom: 0.5rem;
-      letter-spacing: normal;
+      letter-spacing: 0.1em;
     }
 
     .footer-brand p {
