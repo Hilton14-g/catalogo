@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
     <footer>
       <div class="footer-content">
         <div class="footer-brand">
-          <h3>🌹 Rosas Eternas</h3>
         </div>
         <div class="footer-divider"></div>
         <p class="copyright">© 2026 Rosas Eternas. Todos los derechos reservados.</p>
