@@ -66,10 +66,12 @@ export interface Producto {
     }
     
     .product-name {
-      font-family: 'Playfair Display', serif;
-      font-size: 0.9rem;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
       color: var(--text-dark);
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.3rem;
+      letter-spacing: -0.01em;
     }
     
     .product-desc {
@@ -87,21 +89,22 @@ export interface Producto {
     
     .btn-add-cart {
       width: 100%;
-      padding: 0.6rem;
-      background: linear-gradient(135deg, var(--rose-primary) 0%, var(--rose-dark) 100%);
+      padding: 0.75rem;
+      background: var(--rose-primary);
       color: white;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       font-weight: 600;
       cursor: pointer;
-      transition: all 0.3s ease;
-      font-size: 0.85rem;
+      transition: all 0.2s ease;
+      font-size: 0.9rem;
       margin-top: auto;
     }
-    
+
     .btn-add-cart:hover {
-      transform: scale(1.02);
-      box-shadow: 0 4px 12px rgba(253, 121, 168, 0.4);
+      background: var(--rose-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
     }
     
     .product-price span {
@@ -113,15 +116,15 @@ export interface Producto {
     
     .badge {
       position: absolute;
-      top: 8px;
-      right: 8px;
-      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 100%);
-      color: var(--text-dark);
-      padding: 0.2rem 0.5rem;
-      border-radius: 12px;
-      font-size: 0.65rem;
+      top: 12px;
+      right: 12px;
+      background: var(--rose-primary);
+      color: white;
+      padding: 0.3rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
       font-weight: 600;
-      box-shadow: 0 2px 8px rgba(253, 203, 110, 0.4);
+      box-shadow: 0 2px 8px rgba(233, 30, 99, 0.3);
     }
   `]
 })

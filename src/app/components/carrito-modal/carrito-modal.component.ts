@@ -93,9 +93,11 @@ import { CarritoService, CarritoItem } from '../../services/carrito.service';
     }
     
     .modal-header h2 {
-      font-family: 'Playfair Display', serif;
-      color: var(--rose-dark);
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: var(--rose-primary);
       margin: 0;
+      font-weight: 700;
+      letter-spacing: -0.02em;
     }
     
     .btn-close {
@@ -122,9 +124,10 @@ import { CarritoService, CarritoItem } from '../../services/carrito.service';
       display: flex;
       gap: 1rem;
       padding: 1rem;
-      background: var(--bg-soft);
+      background: #f8f9fa;
       border-radius: 12px;
       margin-bottom: 0.8rem;
+      border: 1px solid var(--border-light);
     }
     
     .item-image {
@@ -202,18 +205,21 @@ import { CarritoService, CarritoItem } from '../../services/carrito.service';
     .btn-whatsapp {
       width: 100%;
       padding: 1rem;
-      background: linear-gradient(135deg, #25d366 0%, #128c7e 100%);
+      background: var(--rose-primary);
       color: white;
       border: none;
       border-radius: 12px;
       font-size: 1rem;
       font-weight: 600;
       cursor: pointer;
-      transition: transform 0.3s ease;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
     }
-    
+
     .btn-whatsapp:hover {
-      transform: scale(1.02);
+      background: var(--rose-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
     }
     
     @media (min-width: 768px) {

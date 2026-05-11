@@ -6,71 +6,62 @@ import { Component } from '@angular/core';
   template: `
     <footer>
       <div class="footer-content">
-        <h3>Rosas Eternas</h3>
-        <p>Envíos a todo Chile</p>
-        <p class="copyright"> 2026 Rosas Eternas. Todos los derechos reservados.</p>
+        <div class="footer-brand">
+          <h3>🌹 Rosas Eternas</h3>
+          <p>Envíos a todo Chile</p>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="copyright">© 2026 Rosas Eternas. Todos los derechos reservados.</p>
       </div>
     </footer>
   `,
   styles: [`
     footer {
-      background: linear-gradient(135deg, var(--rose-dark) 0%, var(--rose-primary) 100%);
-      color: white;
+      background: #ffffff;
+      color: var(--text-light);
       text-align: center;
-      padding: 2rem 1rem;
-      margin-top: 2rem;
+      padding: 3rem 2rem;
+      margin-top: 0;
+      border-top: 1px solid var(--border-light);
     }
-    
+
     .footer-content {
-      max-width: 600px;
+      max-width: 1400px;
       margin: 0 auto;
     }
-    
+
+    .footer-brand {
+      margin-bottom: 1.5rem;
+    }
+
     footer h3 {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Inter', -apple-system, sans-serif;
       font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--rose-primary);
       margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
     }
-    
-    footer p {
-      margin-bottom: 0.5rem;
-      opacity: 0.9;
-      font-size: 0.95rem;
+
+    .footer-brand p {
+      font-size: 1rem;
+      color: var(--text-light);
+      margin: 0;
     }
-    
-    .contact-info {
-      margin: 1rem 0;
-      padding: 1rem;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
+
+    .footer-divider {
+      width: 60px;
+      height: 2px;
+      background: var(--rose-light);
+      margin: 1.5rem auto;
+      border-radius: 1px;
     }
-    
-    .contact-info p {
-      font-weight: 500;
-      margin-bottom: 0;
-    }
-    
-    .whatsapp-link {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      text-decoration: none;
-      transition: transform 0.3s ease;
-    }
-    
-    .whatsapp-link:hover {
-      transform: scale(1.1);
-    }
-    
-    .whatsapp-logo {
-      width: 32px;
-      height: 32px;
-    }
-    
+
     .copyright {
-      margin-top: 1.5rem;
-      font-size: 0.85rem;
-      opacity: 0.7;
+      font-size: 0.9rem;
+      color: var(--text-light);
+      opacity: 0.8;
+      margin: 0;
     }
   `]
 })

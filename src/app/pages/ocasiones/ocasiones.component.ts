@@ -51,95 +51,131 @@ interface Ocasion {
   `,
   styles: [`
     .hero-small {
-      background: linear-gradient(135deg, var(--rose-gradient-start) 0%, var(--rose-gradient-end) 100%);
-      color: white;
+      background: #ffffff;
+      color: var(--rose-primary);
       text-align: center;
-      padding: 4rem 2rem 2rem;
-      margin-top: 60px;
+      padding: 8rem 2rem 3rem;
+      margin-top: 0;
+      border-bottom: 1px solid var(--border-light);
     }
-    
+
     .hero-small h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
       margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
     }
-    
+
     .hero-small p {
-      opacity: 0.9;
+      color: var(--text-light);
+      font-size: 1.1rem;
     }
-    
+
     .occasion-nav {
       display: flex;
       overflow-x: auto;
-      background: white;
-      padding: 1rem 0.5rem;
-      gap: 0.5rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background: #ffffff;
+      padding: 1.5rem 2rem;
+      gap: 0.75rem;
+      justify-content: center;
+      border-bottom: 1px solid var(--border-light);
       scrollbar-width: none;
     }
-    
+
     .occasion-nav::-webkit-scrollbar {
       display: none;
     }
-    
+
     .occasion-btn {
       flex-shrink: 0;
-      padding: 0.8rem 1.2rem;
-      border: 2px solid var(--rose-primary);
-      background: white;
-      color: var(--rose-primary);
-      border-radius: 25px;
-      font-size: 0.85rem;
+      padding: 0.9rem 1.5rem;
+      border: 2px solid var(--border-light);
+      background: #ffffff;
+      color: var(--text-light);
+      border-radius: 12px;
+      font-size: 0.9rem;
       font-weight: 500;
       cursor: pointer;
-      transition: all 0.3s ease;
+      transition: all 0.2s ease;
       white-space: nowrap;
     }
-    
+
+    .occasion-btn:hover {
+      border-color: var(--rose-light);
+      color: var(--rose-primary);
+    }
+
     .occasion-btn.active {
-      background: linear-gradient(135deg, var(--rose-primary) 0%, var(--rose-dark) 100%);
+      background: var(--rose-primary);
       color: white;
-      border-color: transparent;
-      box-shadow: 0 4px 15px rgba(253, 121, 168, 0.3);
+      border-color: var(--rose-primary);
+      box-shadow: 0 4px 15px rgba(233, 30, 99, 0.25);
     }
-    
+
     .content {
-      padding: 1.5rem 1rem;
+      padding: 3rem 2rem;
+      background: #ffffff;
+      min-height: 60vh;
     }
-    
+
     .section-header {
       text-align: center;
-      margin-bottom: 1.5rem;
+      margin-bottom: 2.5rem;
     }
-    
+
     .section-icon {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 3rem;
+      margin-bottom: 0.75rem;
     }
-    
+
     .section-header h2 {
-      font-family: 'Playfair Display', serif;
-      color: var(--rose-dark);
-      font-size: 1.6rem;
+      font-family: 'Inter', -apple-system, sans-serif;
+      color: var(--rose-primary);
+      font-size: 2rem;
+      font-weight: 700;
       margin-bottom: 0.5rem;
+      letter-spacing: -0.02em;
     }
-    
+
     .subtitle {
       color: var(--text-light);
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
-    
+
     .product-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 1rem;
-      max-width: 800px;
+      gap: 1.5rem;
+      max-width: 1200px;
       margin: 0 auto;
     }
-    
+
     @media (min-width: 768px) {
       .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .product-grid {
         grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-small h1 {
+        font-size: 1.8rem;
+      }
+
+      .occasion-nav {
+        padding: 1rem;
+        justify-content: flex-start;
+      }
+
+      .content {
+        padding: 2rem 1rem;
       }
     }
   `]
