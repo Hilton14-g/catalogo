@@ -5,12 +5,13 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `
     <footer>
-      <h3>🌹 Rosas Eternas</h3>
-      <p>Envíos a todo Chile</p>
-      <div class="social-links">
-        <span>📸</span>
-        <span>💬</span>
-        <span>📘</span>
+      <div class="footer-content">
+        <h3>Rosas Eternas</h3>
+        <p>Envíos a todo Chile</p>
+        <div class="contact-info">
+          <p>� WhatsApp: +51 983 836 445</p>
+        </div>
+        <p class="copyright">© 2025 Rosas Eternas. Todos los derechos reservados.</p>
       </div>
     </footer>
   `,
@@ -23,24 +24,39 @@ import { Component } from '@angular/core';
       margin-top: 2rem;
     }
     
-    footer h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      margin-bottom: 1rem;
+    .footer-content {
+      max-width: 600px;
+      margin: 0 auto;
     }
     
-    footer p {
-      font-size: 0.9rem;
-      opacity: 0.9;
+    footer h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
       margin-bottom: 0.5rem;
     }
     
-    .social-links {
-      margin-top: 1rem;
-      font-size: 1.5rem;
-      display: flex;
-      justify-content: center;
-      gap: 1rem;
+    footer p {
+      margin-bottom: 0.5rem;
+      opacity: 0.9;
+      font-size: 0.95rem;
+    }
+    
+    .contact-info {
+      margin: 1rem 0;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+    }
+    
+    .contact-info p {
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    
+    .copyright {
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+      opacity: 0.7;
     }
   `]
 })

@@ -32,9 +32,9 @@ import { CommonModule } from '@angular/common';
     
     .navbar-top {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       align-items: center;
-      padding: 1rem;
+      padding: 1rem 1.5rem;
     }
     
     .logo {
@@ -58,6 +58,7 @@ import { CommonModule } from '@angular/common';
       cursor: pointer;
       position: relative;
       transition: transform 0.3s ease;
+      margin-left: auto;
     }
     
     .btn-cart:hover {
