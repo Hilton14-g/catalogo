@@ -41,14 +41,14 @@ import { CommonModule } from '@angular/common';
     }
 
     .logo {
-      font-family: 'Inter', -apple-system, sans-serif;
-      font-size: 1.5rem;
-      font-weight: 700;
+      font-family: 'Yellowtail', cursive;
+      font-size: 2rem;
+      font-weight: 400;
       display: flex;
       align-items: center;
       gap: 0.5rem;
       color: var(--rose-primary);
-      letter-spacing: -0.02em;
+      letter-spacing: normal;
     }
 
     .btn-cart {

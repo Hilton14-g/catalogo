@@ -130,12 +130,12 @@ interface Ocasion {
     }
 
     .section-header h2 {
-      font-family: 'Inter', -apple-system, sans-serif;
+      font-family: 'Yellowtail', cursive;
       color: var(--rose-primary);
-      font-size: 2rem;
-      font-weight: 700;
+      font-size: 3.5rem;
+      font-weight: 400;
       margin-bottom: 0.5rem;
-      letter-spacing: -0.02em;
+      letter-spacing: normal;
     }
 
     .subtitle {
